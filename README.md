@@ -20,6 +20,9 @@ of using `http.Handle` over `http.HandleFunc` is the ability to pass additional
 parameters from your middleware through to your handler function, since
 `http.HandleFunc` requires a function with only two parameters.
 
+Also note that `gorilla/mux`'s router.Use() method only takes the
+type `http.Handle`.
+
 See the docs (mentioned below).
 
 # References
